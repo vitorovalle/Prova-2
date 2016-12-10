@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_tela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projekt.android.sistemaestudos.CadastroTela">
+
+    <TextView
+        android:text="Cadastro do Aprendiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView3"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:id="@+id/NomeCampo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Número da Matrícula"
+        android:ems="10"
+        android:layout_below="@+id/NomeCampo"
+        android:layout_alignStart="@+id/NomeCampo"
+        android:layout_marginTop="32dp"
+        android:id="@+id/MatriculaCampo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="E-Mail"
+        android:ems="10"
+        android:layout_below="@+id/MatriculaCampo"
+        android:layout_alignStart="@+id/MatriculaCampo"
+        android:layout_marginTop="33dp"
+        android:id="@+id/EmailCampo" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GitcontaCampo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/Cursoseletor2" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView3"
+        android:id="@+id/BotaoOkT3" />
+
+    <Button
+        android:text="Limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BotaoOkT3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/BotaoLimparT3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Conta GitHub"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/GitcontaCampo"
+        android:layout_below="@+id/EmailCampo"
+        android:layout_alignStart="@+id/EmailCampo" />
+</RelativeLayout>
